@@ -2,3 +2,4 @@
 logs
 *.log
 dist
+public
