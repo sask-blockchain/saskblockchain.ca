@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    {{ partial "seo.html" . }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Saskatchewan Blockchain Association Inc.</title>
+  </head>
+
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-10 text-center">
+          <a class="blog-header-logo" id="brand-link" href="/">{{ .Site.Title }}</a>
+        </div>
+        <div class="col-2 d-flex justify-content-end align-items-center">
+          <a class="btn btn-sm btn-outline-secondary" href="{{ ref . "join.md" }}">Join Us</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="{{ ref . "about.md" }}">About us</a>
+        <a class="p-2 text-muted" href="{{ ref . "membership.md" }}">Membership</a>
+        <a class="p-2 text-muted" href="{{ ref . "events.md" }}">Events</a>
+        <a class="p-2 text-muted" href="{{ ref . "news" }}">News Releases</a>
+      </nav>
+    </div>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-12 blog-main">
+          {{ block "main" . }}
+
+          {{ end }}
+        </div>
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+
+      <div class="row">
+        <div class="col-12 col-md">
+          <!--<img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">-->
+          <small class="d-block mb-3 text-muted">&copy; 2020</small>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Swag Shop</a></li>
+            <li><a class="text-muted" href="#">Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>Connect</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" target="_blank" href="#">Contact us</a></li>
+            <li><a class="text-muted" target="_blank" href="{{ .Site.Params.slack }}">Slack</a></li>
+            <li><a class="text-muted" target="_blank" href="{{ .Site.Params.facebook }}">Facebook</a></li>
+            <li><a class="text-muted" target="_blank" href="{{ .Site.Params.twitter }}#">Twitter</a></li>
+            <li><a class="text-muted" target="_blank" href="{{ .Site.Params.instagram }}#">Instagram</a></li>
+            <li><a class="text-muted" target="_blank" href="{{ .Site.Params.github }}#">Github</a></li>
+          </ul>
+        </div>
+
+      </div>
+  </footer>
+  </div>
+</body>
+</html>

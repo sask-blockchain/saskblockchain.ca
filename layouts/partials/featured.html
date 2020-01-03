@@ -1,0 +1,15 @@
+<!-- Displays the news article with homepage=true as a Jumbotron -->
+{{ range (where .Site.Pages "Params.homepage" true) }}
+<div class="jumbotron p-4 p-md-12 rounded">
+  <div class="col-md-12 px-0">
+
+    <h1 class="display-5 font-italic">{{ .Title }}</h1>
+
+    <p class="lead my-3">
+    {{ .Summary }}
+    </p>
+
+    <p class="lead mb-0"><a href="{{ .Permalink }}" class="">Continue reading...</a></p>
+  </div>
+</div>
+{{ end }}

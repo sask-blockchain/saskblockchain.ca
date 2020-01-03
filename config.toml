@@ -1,3 +1,12 @@
 baseURL = "http://saskblockchain.ca/"
 languageCode = "en-us"
-title = "Saskatchewan Blockchain Association Inc."
+title = "Saskatchewan Blockchain Association"
+
+[Params]
+description = "A non-profit Blockchain industry association representing the province of Saskatchewan, Canada"
+keywords = "Blockchain,Bitcoin,Ethereum,Crypto,Cryptocurrency,Saskatchewan"
+slack = "https://join.slack.com/t/saskblockchain/shared_invite/enQtNzg1MTExMTgyNTM1LWM1ZDY3ZTlkYmZiMzFhZmQ2NzNiZDAxMTFjM2UxNzYxZjA1MWIzOGViOWM3N2RiYWRhMDU4MzA1YTFjOWEwMjc"
+facebook = "https://www.facebook.com/groups/1626442527572532"
+twitter = "https://twitter.com/saskblockchain"
+instagram = ""
+github = "https://github.com/sask-blockchain"

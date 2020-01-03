@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main role="main" class="container">
+	<div class="row">
+		<div class="col-md-10 blog-main">
+
+      {{ partial "featured.html" . }}
+
+			{{ partial "sponsors.html" }}
+
+			{{ partial "email.html" }}
+
+		</div>
+
+    <div class="col-md-2 blog-main">
+
+      <h5 class="pb-4 mb-4 font-italic border-bottom">Upcoming Events:</h5>
+
+      <ul>
+        <li>Bitcoin &amp; Beers February 2020</li>
+      </ul>
+
+    </div>
+
+</main>
+{{ end }}
