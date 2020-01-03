@@ -1,7 +1,7 @@
 baseURL = "sask-blockchain.github.io/saskblockchain.ca/"
 languageCode = "en-us"
 title = "Saskatchewan Blockchain Association"
-publishDir = "docs"
+publishDir = "public"
 
 [Params]
 description = "A non-profit Blockchain industry association representing the province of Saskatchewan, Canada"
