@@ -1,0 +1,41 @@
+{{ define "main" }}
+<main role="main" class="container">
+
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+  {{ .Title }}
+</h3>
+
+<p>
+  {{ .Content }}
+</p>
+
+<div class="row mb-8">
+  <div class="col-md-8">
+
+    <h4 class="pb-4 mb-4 font-italic border-bottom">
+      Next Meetup
+    </h4>
+    <ul>
+      {{ range first 1 .Pages }}
+      <li>
+        <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <br />
+
+    <h4 class="pb-4 mb-4 font-italic border-bottom">
+      Regina Public Library series
+    </h4>
+
+    <p>
+    Our members have been presenting a <i>Bitcoin 101</i> series at the Regina Public Library.
+    </p>
+
+  </div>
+</div>
+
+</main>
+{{ end }}

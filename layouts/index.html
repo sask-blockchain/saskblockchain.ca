@@ -16,7 +16,9 @@
       <h5 class="pb-4 mb-4 font-italic border-bottom">Upcoming Events:</h5>
 
       <ul>
-        <li>Bitcoin &amp; Beers February 2020</li>
+        {{ range (first 5 (where site.RegularPages "Section" "events") ) }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
       </ul>
 
     </div>
