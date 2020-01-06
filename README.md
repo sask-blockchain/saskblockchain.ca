@@ -13,7 +13,9 @@ Site content is located in the `content` directory.  Templating is in `layouts`,
 3. Clone your fork
 4. Run `hugo serve`
 5. Open website at [http://localhost:1313](http://localhost:1313)
-6. Create a new post with: `hugo new news/<post name>.md`
+6. Create new content:  
+  * New news item: `hugo new news/<post name>.md`
+  * New event: `hugo new events/<event name>.md`
 7. Commit changes
 8. Submit pull request
 
@@ -43,6 +45,15 @@ the follow variables may be included:
 | Name | Description |
 |------|-------------|
 | homepage | If set to `true`, a summary of the article is included on the homepage |
+
+
+Events have the following additional variables:
+
+| Name | Description |
+|------|-------------|
+| eventDate | date of the event |
+| eventLocation | location of the event |
+| facebookEventURL | URL to Facebook event page |
 
 
 
