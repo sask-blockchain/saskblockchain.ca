@@ -1,6 +1,7 @@
 baseURL = "https://sask-blockchain.github.io/"
 languageCode = "en-us"
 title = "Saskatchewan Blockchain Association"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 publishDir = "public"
 
 [Params]
