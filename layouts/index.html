@@ -1,26 +1,22 @@
 {{ define "main" }}
 <main role="main" class="container">
 	<div class="row">
-		<div class="col-md-10 blog-main">
+		<div class="col-md-9 blog-main">
 
       {{ partial "featured.html" . }}
 
 			{{ partial "sponsors.html" }}
 
-			{{ partial "email.html" }}
+      {{ partial "partners.html" }}
 
 		</div>
 
-    <div class="col-md-2 blog-main">
+    <div class="col-md-3 blog-main">
+      {{ partial "upcoming_events.html" }}
 
-      <h5 class="pb-4 mb-4 font-italic border-bottom">Upcoming Events:</h5>
+      {{ partial "latest_news.html" }}
 
-      <ul>
-        {{ range (first 5 (where site.RegularPages "Section" "events") ) }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-
+      {{ partial "email.html" }}
     </div>
 
 </main>

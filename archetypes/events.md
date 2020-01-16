@@ -6,7 +6,7 @@ tags: [event,regina]
 eventDate:
 expiryDate:
 eventLocation:
-facebookEventURL:
+eventURL:
 ---
 
 Event description here

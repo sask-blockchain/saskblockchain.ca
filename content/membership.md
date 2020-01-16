@@ -1,18 +1,20 @@
 ---
-title: "Membership"
+title: "Association Membership"
 ---
-
-#### Individual Membership
 
 Our monthly meetups are always free.
 
-Membership benefits:
+Further support our community by becoming a member.
+
+2020 Membership for individuals is **$10**
+
+
+### Membership benefits:
 
 * Discounts to any future ticketed events
-* Free swag
-* Ethereum membership NFT
+* "Membership card" issued as Ethereum NFT
+* Vote at Annual General Meeting
 
 
-#### Corporate Sponsorship
 
-
+[http://saskblockchain.ca](Join now)

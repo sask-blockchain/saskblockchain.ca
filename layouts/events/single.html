@@ -12,13 +12,17 @@
         <br />
         Location: {{ .Params.eventLocation }}
 
-        {{ .Content }}
-
-        {{ if .Params.facebookEventURL }}
-
-        Facebook event: <a href="{{ .Params.facebookEventURL }}" target="_blank" rel="noopener">{{ .Params.facebookEventURL }}</a>
-
+        {{ if .Params.eventURL }}
+          <br />
+          <a href="{{ .Params.eventURL }}" target="_blank" rel="noopener">
+            <button type="button" class="btn btn-outline-primary">
+              Event Link
+            </button>
+          </a>
         {{ end }}
+
+        <p>
+          {{ .Content }}
         </p>
       </div>
 

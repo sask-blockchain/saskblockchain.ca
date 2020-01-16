@@ -16,7 +16,7 @@
       Next Meetup
     </h4>
     <ul>
-      {{ range first 1 .Pages }}
+      {{ range first 1 (where .Site.Taxonomies.tags.meetup.Pages "Section" "events" ) }}
       <li>
         <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -31,8 +31,17 @@
     </h4>
 
     <p>
-    Our members have been presenting a <i>Bitcoin 101</i> series at the Regina Public Library.
+    Our members present a <i>Bitcoin 101</i> series at the Regina Public Library.
     </p>
+
+    <ul>
+      {{ range (where .Site.Taxonomies.tags.rpl.Pages "Section" "events" ) }}
+      <li>
+        <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
 
   </div>
 </div>

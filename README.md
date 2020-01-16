@@ -53,7 +53,4 @@ Events have the following additional variables:
 |------|-------------|
 | eventDate | date of the event |
 | eventLocation | location of the event |
-| facebookEventURL | URL to Facebook event page |
-
-
-
+| eventURL | URL to external event page |
