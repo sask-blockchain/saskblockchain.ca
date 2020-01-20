@@ -11,7 +11,14 @@
 }
 
 #brand-link {
-  color: #007136;
+  /*color: #007136;*/
+  color: #126b27;
+}
+
+#brand-logo {
+  height: 75px;
+  width: 75px;
+  vertical-align: middle;
 }
 
 .blog-header-logo:hover {
@@ -115,6 +122,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Button primary color */
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #007136 !important;
+.btn-outline-secondary:hover {
+    background-color: #126b27 !important;
+}
+
+.jumbotron.featured {
+  border: 1px solid #126b27;
+  background-color: #f9f9f9;
+  min-height: 275px
+}
+
+input.form-control {
+  background-color: #f9f9f9;
+}
+
+.blog-footer h5 {
+  color: #126b27;
 }
