@@ -5,7 +5,7 @@ tags: [meetup,regina]
 expiryDate: 2020-02-07
 eventDate: 2020-02-06T19:00:00-06:00
 eventLocation: O'Hanlon's Pub
-eventURL:
+eventURL: https://www.facebook.com/events/246175683031823/
 ---
 
 Our casual monthly meetup.  Come out and chat with other local Bitcoin and Blockchain enthusiasts.
