@@ -1,7 +1,14 @@
 {{ define "main"}}
 <main id="main">
   <div>
-    <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Page Not Found
+      </h3>
+
+      <div class="blog-post">
+        <a href="{{ "/" | relURL }}">Return to Home</a>
+      </div>
+
   </div>
 </main>
 {{ end }}

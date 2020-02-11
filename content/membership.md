@@ -15,6 +15,4 @@ Further support our community by becoming a member.
 * "Membership card" issued as Ethereum NFT
 * Vote at Annual General Meeting
 
-
-
-[http://saskblockchain.ca](Join now)
+[Join Now ![credit cards](/images/creditcards.png) ](https://link.waveapps.com/w5axug-u36672)
