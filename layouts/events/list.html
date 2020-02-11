@@ -34,15 +34,17 @@
     Our members present a <i>Bitcoin 101</i> series at the Regina Public Library.
     </p>
 
-    <ul>
-      {{ range (where .Site.Taxonomies.tags.rpl.Pages "Section" "events" ) }}
-      <li>
-        <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-      {{ end }}
-    </ul>
 
+    {{- if .Site.Taxonomies.tags.rpl.Pages }}
+      <ul>
+        {{ range (where .Site.Taxonomies.tags.rpl.Pages "Section" "events" ) }}
+        <li>
+          <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    {{- end }}
   </div>
 </div>
 
