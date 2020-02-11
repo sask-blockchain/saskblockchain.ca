@@ -1,4 +1,4 @@
-baseURL = "https://sask-blockchain.github.io/"
+baseURL = "https://saskblockchain.ca/"
 languageCode = "en-us"
 title = "Saskatchewan Blockchain Association"
 disableKinds = ["taxonomy", "taxonomyTerm"]
