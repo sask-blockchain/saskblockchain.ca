@@ -11,8 +11,8 @@ title: "Join"
 
 ### Individual Memberships
 
-[Become a member to support our community.](/membership)  Individual membership for 2020 are $10 and you
-discounts on any future ticketed events.
+[Become a member to support our community.](/membership)  Individual membership for 2020 are $10
+and will provide discounts on any future ticketed events.  Our monthly meetups are always free.
 
 
 ### Corporate Memberships
