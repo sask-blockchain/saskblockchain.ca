@@ -1,7 +1,7 @@
 <h5 class="pb-4 mb-4 font-italic border-bottom">Upcoming Events</h5>
 
 <ul>
-  {{ range (first 5 (where site.RegularPages "Section" "events") ) }}
+  {{ range (first 5 ( sort (where site.RegularPages "Section" "events") ".Params.eventDate" ) ) }}
   <li>
     <a href="{{ .Permalink }}">
       <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
