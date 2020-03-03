@@ -16,7 +16,7 @@
       Next Meetup
     </h4>
     <ul>
-      {{ range first 1 (where .Site.Taxonomies.tags.meetup.Pages "Section" "events" ) }}
+      {{ range first 1 ( sort (where .Site.Taxonomies.tags.meetup.Pages "Section" "events" ) ".Params.eventDate" false ) }}
       <li>
         <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
         <a href="{{ .Permalink }}">{{ .Title }}</a>
