@@ -3,6 +3,12 @@
 <ul>
   {{ range (first 5 ( sort (where site.RegularPages "Section" "events") ".Params.eventDate" ) ) }}
   <li>
+    {{ if in .Params.tags "regina" }}
+      <span class="badge badge-primary">Regina</span>
+    {{ end }}
+    {{ if in .Params.tags "saskatoon" }}
+      <span class="badge badge-success">Saskatoon</span>
+    {{ end }}
     <a href="{{ .Permalink }}">
       <strong>{{ dateFormat "January 2, 2006" .Params.eventDate }}</strong> -
       {{ .Title }}

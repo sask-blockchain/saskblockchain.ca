@@ -1,8 +1,10 @@
 <header class="blog-header py-3">
   <div class="row flex-nowrap justify-content-between align-items-center">
     <div class="col-10 text-center">
-      <img src="/images/logo.png" id="brand-logo" />&nbsp;
-      <a class="blog-header-logo" id="brand-link" href="/">{{ .Site.Title }}</a>
+      <a class="blog-header-logo" id="brand-link" href="/">
+        <img src="/images/logo.png" id="brand-logo" />&nbsp;
+        {{ .Site.Title }}
+      </a>
     </div>
     <div class="col-2 d-flex justify-content-end align-items-center">
       <a class="btn btn-sm btn-outline-secondary" href="{{ ref . "join.md" }}">Join Us</a>
