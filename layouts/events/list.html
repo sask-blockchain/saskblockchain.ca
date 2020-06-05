@@ -12,6 +12,7 @@
 <div class="row mb-8">
   <div class="col-md-8">
 
+    {{ with .Site.Taxonomies.tags.meetup.Pages }}
     <h4 class="pb-4 mb-4 font-italic border-bottom">
       Next Meetup
     </h4>
@@ -23,6 +24,7 @@
       </li>
       {{ end }}
     </ul>
+    {{ end }}
 
     <br />
 
